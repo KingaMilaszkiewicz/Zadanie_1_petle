@@ -13,10 +13,10 @@ int main(void) // notify the compiler that the function doesn't take any argumen
 	int min = 100, max = 0;
 
 	for (int i = 0; i < 100; i++) { // loop 100 times
-		int randomNumber = rand() % (100 + 1 - 0) + 0; // add up all the random numbers in 0-100 scope
+		int randomNumber = rand() % (100) + 1; // add up all the random numbers in 1-100 scope
 		average += randomNumber;
 
-		std::cout << randomNumber << ", ";
+		// std::cout << randomNumber << ", "; // debug code
 
 		if (min > randomNumber) {
 			min = randomNumber;
@@ -27,6 +27,7 @@ int main(void) // notify the compiler that the function doesn't take any argumen
 	}
 
 	average = average / 100; // calculate the average
+
 	std::cout << "average: " << average << std::endl;
 	std::cout << "min: " << min << std::endl;
 	std::cout << "max: " << max << std::endl;
