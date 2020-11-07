@@ -1,20 +1,20 @@
 // Zadanie_1_petle.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// Program has to choose 100 numbers. After choosing, it'll show the average of all of them, the lowest and the highest value.
 
 #include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-int main()
+int main(void) // notify the compiler that the function doesn't take any arguments
 {
-    std::cout << "Hello World!\n";
+	srand(time(0));
+	int average = 0;
+
+	for (int i = 0; i < 100; i++) {
+		average += rand() % (100 + 1 - 0) + 0;
+	}
+	average = average / 100;
+	std::cout << average;
+	return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

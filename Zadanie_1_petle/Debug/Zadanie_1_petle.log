@@ -1,0 +1,3 @@
+﻿  Zadanie_1_petle.cpp
+C:\KINGA\Coding\C++\Zadanie_1_petle\Zadanie_1_petle\Zadanie_1_petle.cpp(11,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Zadanie_1_petle.vcxproj -> C:\KINGA\Coding\C++\Zadanie_1_petle\Debug\Zadanie_1_petle.exe
